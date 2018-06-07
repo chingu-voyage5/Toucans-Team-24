@@ -3,7 +3,7 @@ Pomodoro webapp
 
 A focus timer to increase productivity.
 
-MVP: a functional timer with break and work periods and a fully designed webpage
+MVP: a functional timer with break and work periods and a fully designed webpage.
 Due: 21/7/18 (Thursday)
 
 Planned features:
