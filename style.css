@@ -1,0 +1,43 @@
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.container {
+    padding-top: 2%;
+}
+
+.notification {
+    width: 33%;
+    margin: 3%;
+    padding: 3%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.oi-bell {
+    font-size: 40px;
+    padding: 5%;
+}
+
+.timerStatus {
+    width: 33%;
+    border: 4px solid lightgray;
+    margin: 3%;
+    padding: 3%;
+    text-align: center;
+    font-size: 100px;
+}
+
+.setTimer {
+    width: 33%;
+    margin: 3%;
+    padding: 3%;
+}
+
+.p2 {
+    margin: 2%;
+    padding: 2%;
+    font-size: 30px;
+    text-align: center;
+}
