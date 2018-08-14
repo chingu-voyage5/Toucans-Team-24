@@ -1,27 +1,39 @@
-.oi {
-    cursor: pointer;
+body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+#flex-container-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#flex-container-middle {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flex-container-bottom {
+    display: flex;
+    justify-content: center;
 }
 
 .title {
     font-size: 50px;
-    text-align: center;
-}
-
-.container {
-    padding-top: 2%;
 }
 
 .notification {
-    width: 33%;
-    margin: 3%;
-    padding: 3%;
     font-size: 30px;
-    text-align: center;
 }
 
 .oi-bell {
     font-size: 40px;
     padding: 5%;
+}
+
+.focus, .break-input, .min, .form-control {
+  align-self: center;
+  font-size: 21px;
 }
 
 .timerStatus {
@@ -31,12 +43,7 @@
     padding: 3%;
     text-align: center;
     font-size: 100px;
-}
-
-.setTimer {
-    width: 33%;
-    margin: 3%;
-    padding: 3%;
+    align-self: center;
 }
 
 .p2 {

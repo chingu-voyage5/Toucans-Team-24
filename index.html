@@ -1,83 +1,61 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Pomodoro Timer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
-        integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <audio src="lib/sound/alarm.wav"></audio>
-    <div class="title">
-            Pomodoro Timer | Stay Focused
+    
+    <div id="flex-container-top">
+		<div class="title">
+		Pomodoro Timer | Stay Focused
+		</div>
+
+		<div class="notification">
+		<i class="fas fa-bell"></i>
+		</div>
     </div>
     
-    <div class="container">
-        <div class="row">
-            <div class="col notification">
-                <div>Notification</div>
-                <span class="oi oi-bell"></span>
-            </div>
+    <div id="flex-container-middle">
+		<span class="focus">Focus</span>
+		<input type="text" class="form-control" aria-label="Focus Time">
+		<span class="min">min</span>
 
-            <div class="col timerStatus work">
-                <span id="workDisplay">25:00</span>
-            </div>
-            <div class="col timerStatus break hidden">
-                <span id="breakDisplay">05:00</span>
-            </div>
+		<div class="timerStatus work">
+		<span id="workDisplay">25:00</span>
+		</div>
+		<div class="timerStatus break hidden">
+		<span id="breakDisplay">05:00</span>
+		</div>
 
-            <div class="col setTimer">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Focus</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Focus Time">
-                    <div class="input-group-append">
-                        <span class="input-group-text">min</span>
-                    </div>
-                </div>
+		<span class="break-input">Break</span>
+		<input type="text" class="form-control" aria-label="Break">
+		<span class="min">min</span>
+	</div>
 
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Break</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Break">
-                    <div class="input-group-append">
-                        <span class="input-group-text">min</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="flex-container-bottom">
+	    <div class="p2 reset">
+	      <div>Reset</div>
+	      <i id="reset" class="fas fa-sync-alt"></i>
+	    </div>
 
-    <div class="d-flex justify-content-center control">
-        <div class="p2 reset">
-            <div>Reset</div>
-            <span id="reset"class="oi oi-loop-circular"></span>
-        </div>
-        
         <div class="p2 start">
-            <div>Start</div>
-            <span id="start" class="oi oi-play-circle"></span>
+          <div>Start</div>
+          <i id="start" class="fas fa-play"></i>
         </div>
 
         <div class="p2 stop">
-            <div>Stop</div>
-            <span id="stop" class="oi oi-media-stop"></span>
+          <div>Stop</div>
+          <i id="stop" class="fas fa-stop"></i>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+   
     <script type="text/javascript" src = "lib/script/script.js"></script>
 </body>
 </html>
