@@ -1,42 +1,61 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Pomodoro Timer</title>
-    <link rel="stylesheet" type="text/css" href="lib/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div class="center">
-        <div class="title">
-            Pomodoro Timer | Stay Focused
-        </div>
-        
-        <div class="settings">
-            <div class="BreakTime">
-                <div class="description">Break</div>
-                <div class="value">
-                    <span class="default">5</span>
-                </div>
-            </div>
-            
-            <div class="FocusTime">
-                <div class="description">Focus</div>
-                <div class="value">
-                    <span class="default">25</span> 
-                </div>
-            </div>
-        </div>
-        
-        <div class="Timer">
-            <div class="reset">Reset</div>
-            <div class="status">Start</div>
-            <div class="stop">Stop</div>
-        </div>
+    <audio src="lib/sound/alarm.wav"></audio>
     
+    <div id="flex-container-top">
+		<div class="title">
+		Pomodoro Timer | Stay Focused
+		</div>
+
+		<div class="notification">
+		<i class="fas fa-bell"></i>
+		</div>
     </div>
     
-  <script type="text/javascript" src="lib/script/script.js"></script>
+    <div id="flex-container-middle">
+		<span class="focus">Focus</span>
+		<input type="text" class="form-control" aria-label="Focus Time">
+		<span class="min">min</span>
+
+		<div class="timerStatus work">
+		<span id="workDisplay">25:00</span>
+		</div>
+		<div class="timerStatus break hidden">
+		<span id="breakDisplay">05:00</span>
+		</div>
+
+		<span class="break-input">Break</span>
+		<input type="text" class="form-control" aria-label="Break">
+		<span class="min">min</span>
+	</div>
+
+    <div id="flex-container-bottom">
+	    <div class="p2 reset">
+	      <div>Reset</div>
+	      <i id="reset" class="fas fa-sync-alt"></i>
+	    </div>
+
+        <div class="p2 start">
+          <div>Start</div>
+          <i id="start" class="fas fa-play"></i>
+        </div>
+
+        <div class="p2 stop">
+          <div>Stop</div>
+          <i id="stop" class="fas fa-stop"></i>
+        </div>
+    </div>
+   
+    <script type="text/javascript" src = "lib/script/script.js"></script>
 </body>
 </html>
